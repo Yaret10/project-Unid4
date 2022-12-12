@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 #from portafolio import views
 from portafolio.views import index_view
@@ -23,3 +25,5 @@ urlpatterns = [
     #path('', views.index_view)
     path('', index_view.as_view(), name="home"),
 ]
+
+urlpatterns += staticfiles_urlpatterns()

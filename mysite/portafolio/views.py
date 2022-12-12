@@ -9,4 +9,4 @@ class index_view(View):
         return render(request, self.template)
 
 # def index(request):
-#     return render(request, "portafolio/index.html")
+#     return render(request, "portafolio/index.html"
